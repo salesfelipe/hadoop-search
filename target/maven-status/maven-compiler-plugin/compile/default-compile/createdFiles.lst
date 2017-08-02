@@ -1,0 +1,6 @@
+com/qfa/WordCount$MapClass.class
+com/qfa/WordCount.class
+com/nSearch/Searcher$MapperClass.class
+com/qfa/WordCount$Reduce.class
+com/nSearch/Searcher$ReducerClass.class
+com/nSearch/Searcher.class

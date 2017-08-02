@@ -1,0 +1,17 @@
+#!/bin/bash
+
+mvn install
+
+hdfs dfs -rm -r input
+
+hdfs dfs -rm -r out
+
+hadoop fs -copyFromLocal datasets/ input
+
+hadoop jar ./target/nSearch-1.0.jar input/db.csv out Temer
+
+rm -r out*
+
+hdfs dfs -copyToLocal out out$(date +%s)
+
+#hadoop jar ./target/bdp-1.0.jar dataSet1.txt $(date +%s)
