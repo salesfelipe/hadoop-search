@@ -8,9 +8,9 @@ hdfs dfs -rm -r out
 
 hadoop fs -copyFromLocal datasets/ input
 
-hadoop jar ./target/nSearch-1.0.jar input/db.csv out Temer
+hadoop jar ./target/nSearch-1.0.jar input/noticias.csv out cássio 495ad7ba-2c0e-492e-aa64-f3d4f86049a0 local
 
-rm -r out*
+#rm -r out*
 
 hdfs dfs -copyToLocal out out$(date +%s)
 

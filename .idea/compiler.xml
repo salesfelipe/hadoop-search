@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="maven-archiver" />
-        <module name="WordCount" />
+        <module name="nSearch" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="maven-archiver" target="1.5" />
-      <module name="WordCount" target="1.6" />
+      <module name="nSearch" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
